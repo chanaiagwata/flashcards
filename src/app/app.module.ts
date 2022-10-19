@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FlashcardComponent } from './flashcard/flashcard.component';
+import { FlashDetailsComponent } from './flash-details/flash-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FlashcardComponent
+    FlashcardComponent,
+    FlashDetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -14,6 +14,10 @@ export class FlashcardComponent implements OnInit {
     new Flashcard(4, 'data binding', 'mechanism for coordinating parts of template with a component')
 
   ]
+  viewDescription(index:number){
+    this.flashcards[index].showDescription = !this.flashcards[index].showDescription
+
+  }
 
   constructor() { }
 

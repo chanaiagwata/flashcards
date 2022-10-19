@@ -10,6 +10,8 @@
     <ol>
         <div *ngFor='let flashcard of flashcards; let i = index'>
                 <li>{{flashcard.name}}</li>
+                <button (click) = 'viewDescription(i)'>Read Meaning</button>
+                <app-flash-details *ngIf="flashcard.showDescription" [flashcard]="flashcard"></app-flash-details>
         </div>
     </ol>
 
