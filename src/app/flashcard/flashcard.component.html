@@ -7,11 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <div *ngFor='let flashcard of flashcards'>
-        <ol>
-            <li>{{flashcard.name}}</li>
-        </ol>
+    <ol>
+        <div *ngFor='let flashcard of flashcards; let i = index'>
+                <li>{{flashcard.name}}</li>
+        </div>
+    </ol>
 
-    </div>
 </body>
 </html>
